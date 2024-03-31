@@ -1,0 +1,67 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/modeltech64_10.4/win64
+T_opt
+!s110 1711884510
+V^9kVX<hXZ:]`<i66:?J@l3
+Z1 04 11 4 work tb_flow_led fast 0
+=1-3c7c3f7f6d2f-660948de-295-54a8
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.4;61
+R0
+T_opt1
+!s110 1711884527
+V@O0I_0VlNTRnnV[>b>a=X2
+R1
+=1-3c7c3f7f6d2f-660948ee-3b7-18bc
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt1
+R2
+vflow_led
+Z3 !s110 1711884464
+!i10b 1
+!s100 hK=ZH;_W3W6dMEbVdWM2W0
+I76Fd[A<KTG1Q0jM6C4J:X2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 dE:/FPGA/fpga_study/01_flow_led/sim
+w1711877140
+8E:/FPGA/fpga_study/01_flow_led/rtl/flow_led.v
+FE:/FPGA/fpga_study/01_flow_led/rtl/flow_led.v
+L0 1
+Z6 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1711884464.790000
+!s107 E:/FPGA/fpga_study/01_flow_led/rtl/flow_led.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/FPGA/fpga_study/01_flow_led/rtl/flow_led.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtb_flow_led
+R3
+!i10b 1
+!s100 lDi2PcH]d[aD_11ll:Vl10
+Ilo=ORnHVRLfgabOj?4R9S0
+R4
+R5
+w1711883957
+8E:/FPGA/fpga_study/01_flow_led/sim/tb_flow_led.v
+FE:/FPGA/fpga_study/01_flow_led/sim/tb_flow_led.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1711884464.727000
+!s107 E:/FPGA/fpga_study/01_flow_led/sim/tb_flow_led.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/FPGA/fpga_study/01_flow_led/sim/tb_flow_led.v|
+!i113 0
+R7
