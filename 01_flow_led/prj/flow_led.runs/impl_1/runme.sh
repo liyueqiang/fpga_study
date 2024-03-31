@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/FPGA/fpga_study/01_flow_led/flow_led.runs/impl_1'
+HD_PWD='E:/FPGA/fpga_study/01_flow_led/prj/flow_led.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log flow_led.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source flow_led.tcl -notrace
 
 
