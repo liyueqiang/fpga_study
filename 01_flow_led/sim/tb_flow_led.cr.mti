@@ -1,15 +1,15 @@
-E:/FPGA/fpga_study/01_flow_led/rtl/flow_led.v {1 {vlog -work work -vopt -stats=none E:/FPGA/fpga_study/01_flow_led/rtl/flow_led.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module flow_led
-
-Top level modules:
-	flow_led
-
-} {} {}} E:/FPGA/fpga_study/01_flow_led/sim/tb_flow_led.v {1 {vlog -work work -vopt -stats=none E:/FPGA/fpga_study/01_flow_led/sim/tb_flow_led.v
+E:/FPGA/fpga_study/01_flow_led/sim/tb_flow_led.v {1 {vlog -work work -vopt -stats=none E:/FPGA/fpga_study/01_flow_led/sim/tb_flow_led.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module tb_flow_led
 
 Top level modules:
 	tb_flow_led
+
+} {} {}} E:/FPGA/fpga_study/01_flow_led/rtl/flow_led.v {1 {vlog -work work -vopt -stats=none E:/FPGA/fpga_study/01_flow_led/rtl/flow_led.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module flow_led
+
+Top level modules:
+	flow_led
 
 } {} {}}

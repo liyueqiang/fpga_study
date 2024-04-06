@@ -1,0 +1,88 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.5 (Oracle Corporation Java 17.0.6)
+[debug] Load.defaultLoad until apply took 257.0531ms
+[debug]           Load.loadUnit: plugins took 61.923ms
+[debug]           Load.loadUnit: defsScala took 0.228ms
+[debug] [Loading] Scanning directory E:\FPGA\fpga_study\01_flow_led\doc\flow_led\project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in E:\FPGA\fpga_study\01_flow_led\doc\flow_led\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 13.5933 ms
+[debug]               Load.resolveProject(flow_led-build) took 34.5427ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id flow_led-build, base: E:\FPGA\fpga_study\01_flow_led\doc\flow_led\project, plugins: List(<none>))) took 63.84ms
+[debug] [Loading] Done in E:\FPGA\fpga_study\01_flow_led\doc\flow_led\project, returning: (flow_led-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 80.5065ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.3524ms
+[debug]         Load.loadUnit(file:/E:/FPGA/fpga_study/01_flow_led/doc/flow_led/project/, ...) took 148.1031ms
+[debug]       Load.apply: load took 257.4923ms
+[debug]       Load.apply: resolveProjects took 4.418ms
+[debug]       Load.apply: finalTransforms took 43.9009ms
+[debug]       Load.apply: config.delegates took 5.8233ms
+[debug]       Load.apply: Def.make(settings)... took 264.4764ms
+[debug]       Load.apply: structureIndex took 69.2656ms
+[debug]       Load.apply: mkStreams took 1.0971ms
+[info] loading project definition from E:\FPGA\fpga_study\01_flow_led\doc\flow_led\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 1171.6716ms
+[debug]     Load.loadUnit: defsScala took 0.0029ms
+[debug] [Loading] Scanning directory E:\FPGA\fpga_study\01_flow_led\doc\flow_led
+[debug]       Load.loadUnit: mkEval took 3.8432ms
+[debug] [Loading] Found root project mylib w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.2804 ms
+[info] loading settings for project mylib from build.sbt ...
+[debug]         Load.resolveProject(mylib) took 1.8702ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id mylib, base: E:\FPGA\fpga_study\01_flow_led\doc\flow_led, plugins: List(<none>))) took 3.9334ms
+[debug] [Loading] Done in E:\FPGA\fpga_study\01_flow_led\doc\flow_led, returning: (mylib)
+[debug]     Load.loadUnit: loadedProjectsRaw took 148.7901ms
+[debug]     Load.loadUnit: cleanEvalClasses took 11.7335ms
+[debug]   Load.loadUnit(file:/E:/FPGA/fpga_study/01_flow_led/doc/flow_led/, ...) took 1333.5234ms
+[debug] Load.apply: load took 1348.3521ms
+[debug] Load.apply: resolveProjects took 0.1398ms
+[debug] Load.apply: finalTransforms took 7.3922ms
+[debug] Load.apply: config.delegates took 0.3679ms
+[debug] Load.apply: Def.make(settings)... took 54.9695ms
+[debug] Load.apply: structureIndex took 21.6166ms
+[debug] Load.apply: mkStreams took 0.0021ms
+[info] set current project to test (in build file:/E:/FPGA/fpga_study/01_flow_led/doc/flow_led/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:sbt-server-b55774c67f0cfe0427d8
+[debug] Writing bsp connection file
+[info] started sbt server

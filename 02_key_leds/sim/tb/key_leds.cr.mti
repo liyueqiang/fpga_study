@@ -1,0 +1,8 @@
+E:/FPGA/fpga_study/02_key_leds/rtl/key_leds.v {1 {vlog -work work -vopt -stats=none E:/FPGA/fpga_study/02_key_leds/rtl/key_leds.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module key_leds
+
+Top level modules:
+	key_leds
+
+} {} {}}

@@ -1,0 +1,69 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/FPGA/fpga_study/01_flow_led/sim
+vkey_leds
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Fo18?SP8a6hcRDTQeXa<03
+IIC5Ga[TF6SRJ1iQML8@OW2
+Z1 dE:/FPGA/fpga_study/02_key_leds/sim/tb
+w1712393495
+8E:/FPGA/fpga_study/02_key_leds/rtl/key_leds.v
+FE:/FPGA/fpga_study/02_key_leds/rtl/key_leds.v
+L0 1
+Z2 OL;L;10.4;61
+!s108 1712393629.532000
+!s107 E:/FPGA/fpga_study/02_key_leds/rtl/key_leds.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/FPGA/fpga_study/02_key_leds/rtl/key_leds.v|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vmoduleName
+!s110 1712393629
+!i10b 1
+!s100 >Y;O4J]WX9TcEh4z8Jl^m1
+IecHV`?5DJ0cGGWHJko^7O0
+R0
+R1
+w1712393547
+Z4 8E:/FPGA/fpga_study/02_key_leds/sim/tb_key_leds.v
+Z5 FE:/FPGA/fpga_study/02_key_leds/sim/tb_key_leds.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1712393629.492000
+Z6 !s107 E:/FPGA/fpga_study/02_key_leds/sim/tb_key_leds.v|
+Z7 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/FPGA/fpga_study/02_key_leds/sim/tb_key_leds.v|
+!i113 0
+R3
+nmodule@name
+vtb_key_leds
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 YTU]PD`5[LZK8f_7MlZaL2
+IV?53RQ=YC7<S9o?LMMVk:2
+R1
+w1712393836
+R4
+R5
+L0 3
+R2
+!s108 1712393848.031000
+R6
+R7
+!i113 0
+R3
