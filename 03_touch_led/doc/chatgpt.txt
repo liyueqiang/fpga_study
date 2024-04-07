@@ -1,0 +1,91 @@
+
+User
+使用spinalhdl编写代码生成以下verilog代码module touch_led (
+    input       sys_clk     ,
+    input       sys_rst_n   ,
+    input       touch       ,
+    output reg  led
+);
+
+//
+reg touch_d0;
+reg touch_d1;
+reg touch_d2;
+wire touch_rise;
+assign touch_rise = (!touch_d2) & touch_d1;
+always @(posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n) begin
+        touch_d0 <= 1'b0;
+        touch_d1 <= 1'b0;
+        touch_d2 <= 1'b0;
+    end
+    else begin
+        touch_d0 <= touch;
+        touch_d1 <= touch_d0;
+        touch_d2 <= touch_d1;
+    end
+end
+
+always @(posedge sys_clk or negedge sys_rst_n) begin
+    if(!sys_rst_n)
+        led <= 1'b0;
+    else if(touch_rise)
+        led <= ~led;
+    else
+        led <= led;
+end
+ 
+endmodule
+
+2 / 2
+
+ChatGPT
+以下是使用SpinalHDL编写的代码，用于生成你提供的Verilog代码：
+
+scala
+Copy code
+import spinal.core._
+
+class TouchLED extends Component {
+  val io = new Bundle {
+    val sys_clk   = in Bool   // 系统时钟
+    val sys_rst_n = in Bool   // 下降沿复位信号
+    val touch     = in Bool   // 触摸输入
+    val led       = out Bool  // LED输出
+  }
+
+  // 触摸状态寄存器
+  val touch_d0 = Reg(Bool) init(False)
+  val touch_d1 = Reg(Bool) init(False)
+  val touch_d2 = Reg(Bool) init(False)
+
+  // 触摸上升沿信号
+  val touch_rise = !touch_d2 & touch_d1
+
+  // 触摸状态更新
+  when(!io.sys_rst_n) {
+    touch_d0 := False
+    touch_d1 := False
+    touch_d2 := False
+  } otherwise {
+    touch_d0 := io.touch
+    touch_d1 := touch_d0
+    touch_d2 := touch_d1
+  }
+
+  // LED控制
+  when(!io.sys_rst_n) {
+    io.led := False
+  } elsewhen (touch_rise) {
+    io.led := ~io.led
+  } otherwise {
+    io.led := io.led
+  }
+}
+
+object TouchLEDVerilog {
+  def main(args: Array[String]): Unit = {
+    SpinalConfig(targetDirectory = "output/").generateVerilog(new TouchLED)
+  }
+}
+这段SpinalHDL代码会生成与你提供的Verilog代码功能相同的硬件描述。

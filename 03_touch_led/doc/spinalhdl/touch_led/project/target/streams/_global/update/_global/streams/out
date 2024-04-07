@@ -1,0 +1,3 @@
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/E:/FPGA/fpga_study/03_touch_led/doc/spinalhdl/touch_led/project/"), "touch_led-build")...
+[debug] Done updating ProjectRef(uri("file:/E:/FPGA/fpga_study/03_touch_led/doc/spinalhdl/touch_led/project/"), "touch_led-build")

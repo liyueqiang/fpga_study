@@ -1,0 +1,15 @@
+E:/FPGA/fpga_study/03_touch_led/rtl/touch_led.v {1 {vlog -work work -vopt -stats=none E:/FPGA/fpga_study/03_touch_led/rtl/touch_led.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module touch_led
+
+Top level modules:
+	touch_led
+
+} {} {}} E:/FPGA/fpga_study/03_touch_led/sim/tb/tb_touch_led.v {1 {vlog -work work -vopt -stats=none E:/FPGA/fpga_study/03_touch_led/sim/tb/tb_touch_led.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_touch_led
+
+Top level modules:
+	tb_touch_led
+
+} {} {}}
