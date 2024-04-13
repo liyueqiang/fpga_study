@@ -1,3 +1,7 @@
 **/.idea/**
 **/prj/**
 /.metals/**
+**/tb/**
+!*.v
+!*.scala
+**/target/**
