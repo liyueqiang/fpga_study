@@ -24,7 +24,7 @@ wire [6:0] device_addr;
 assign device_addr = DEV_ADDR;
 
 
-// sda三态
+// sda三�??
 reg     sda_dir;
 reg     sda_out;
 wire    sda_in;
@@ -49,19 +49,19 @@ always @(posedge sys_clk or negedge sys_rst_n) begin
 end
 
 //输出IIC
-localparam ST_IDLE   = 8'b0000_0001;//空闲状态
-localparam ST_DEV_W  = 8'b0000_0010;//器件地址写
-localparam ST_DEV_R  = 8'b0000_0100;//器件地址读
-localparam ST_ADDR_H = 8'b0000_1000;//地址高8bit
-localparam ST_ADDR_L = 8'b0001_0000;//地址低8bit
-localparam ST_WRITE  = 8'b0010_0000;//写数据
-localparam ST_READ   = 8'b0100_0000;//读数据
-localparam ST_STOP   = 8'b1000_0000;//停止状态
+localparam ST_IDLE   = 8'b0000_0001;//空闲状�??
+localparam ST_DEV_W  = 8'b0000_0010;//器件地址�?
+localparam ST_DEV_R  = 8'b0000_0100;//器件地址�?
+localparam ST_ADDR_H = 8'b0000_1000;//地址�?8bit
+localparam ST_ADDR_L = 8'b0001_0000;//地址�?8bit
+localparam ST_WRITE  = 8'b0010_0000;//写数�?
+localparam ST_READ   = 8'b0100_0000;//读数�?
+localparam ST_STOP   = 8'b1000_0000;//停止状�??
 
 
-reg     [7:0]   state_next  ;//下一状态
-reg     [7:0]   state_curr  ;//当前状态
-reg             state_done  ;//状态跳转
+reg     [7:0]   state_next  ;//下一状�??
+reg     [7:0]   state_curr  ;//当前状�??
+reg             state_done  ;//状�?�跳�?
 reg             iic_rh_wl_t ;
 reg     [7:0]   iic_data_rt ;
 reg     [7:0]   iic_data_wt ;
@@ -69,10 +69,8 @@ reg     [15:0]  iic_addr_t  ;
 reg     [7:0]   state_cnt   ;
 
 always @(posedge iic_4_clk or negedge sys_rst_n) begin
-    if(!sys_rst_n) begin
-        state_next <= ST_IDLE;
+    if(!sys_rst_n)
         state_curr <= ST_IDLE;
-    end
     else
         state_curr <= state_next;
 end
